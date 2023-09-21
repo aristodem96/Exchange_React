@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  height: auto;
+  width: auto;
+  z-index: 0;
+  flex: content;
+  font-family: monospace;
+}
+
+.main {
+  position: relative;
+  top: 70px;
+}
+
+body {
+  background-image: url(/src/assets/mybackground.avif);
 }
 
 .App-logo {
@@ -32,7 +46,112 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.exchange_block {
+  height:auto;
+  padding: 1px;
+  position:relative;
+  opacity: 95%;
+  border-radius: 15px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+
+.exchange_block_internal {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #282c34;
+  opacity: 90%;
+  border-radius: 20px;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.exchange_block_title {
+  color: #ffffff;
+  font-family: monospace;
+  position: relative;
+  float: left;
+}
+
+/* TO DO */
+.footer_internal {
+  margin-top: 130px;
+  background-color: black;
+  height: 100px;
+  padding: 2%;
+  color: whitesmoke;
+  border-top: #1E90FF 1px solid;
+}
+
+.mylogo {
+  float: right;
+}
+
+.allrightrecived {
+  position: relative;
+  top: 1vh;
+  color: #ffffff;
+  float: left;
+  width: 100%;
+}
+
+.block_exchangepicture {
+  position: relative;
+  top: 10px;
+  font-family: monospace;
+}
+
+.exchange_block_crypto {
+  position: relative;
+}
+
+.exchange_li {
+  display: inline;
+  margin: 1px;
+  float: left;
+}
+
+.exchange_li_picture {
+  width: 65%;
+}
+
+.exchange_block_form{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.how_exchange{
+  opacity: 90%;
+  color: whitesmoke;
+  padding: 2%;
+  position: relative;
+  top: 4vh;
+}
+
+.transaction{
+  margin-top: 100px;
+  padding: 2%;
+  background-color: black;
+  opacity: 90%;
+  border-start-start-radius: 20px;
+  overflow-y: scroll;
+  height: 80vh;
+}
+.exchangepicture{
+  width: 80%;
 }
